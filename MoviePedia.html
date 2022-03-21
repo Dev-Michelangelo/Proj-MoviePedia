@@ -21,10 +21,21 @@ crossorigin="anonymous"></script>
 <style>
     .Postbox{
         width: 500px;
-        margin: 20px auto 0px auto;
+        margin: 20px auto 0px auto;/*바깥공백*/
 
         box-shadow: 0px 0px 3px 0px grey;/*박스 그림자 효과*/
         padding: 20px;/*안쪽 공백*/
+    }
+    .Postbtn{
+        display: flex;
+        flex-direction: row;/*보통 column, row(열로 정렬) 만 변경*/
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 10px;
+    }
+    .Postbtn > button{
+        margin-right: 10px;
     }
 </style>
 </head>
@@ -37,7 +48,31 @@ crossorigin="anonymous"></script>
     <!--BannerBox-->
     <!--PostBox-->
     <div class="Postbox">
-        Post
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">영화 url</label>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>선택하기</option>
+              <option value="1">⭐</option>
+              <option value="2">⭐⭐</option>
+              <option value="3">⭐⭐⭐</option>
+              <option value="4">⭐⭐⭐⭐</option>
+              <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+          </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+          </div>
+        <!--Post button-->
+        <div class="Postbtn">
+            <button type="button" class="btn btn-dark">기록하기</button>
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+        </div>
+        <!--Post button-->
     </div>
     <!--PostBox-->
     <!--Cards-->
@@ -56,6 +91,7 @@ crossorigin="anonymous"></script>
                 <!--Comment-->
                 <p class="Mycomment">Comment</p>
                 </div>
+                <!--Comment-->
             </div>
             </div>
             <div class="col">
