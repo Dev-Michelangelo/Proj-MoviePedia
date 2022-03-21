@@ -1,5 +1,6 @@
 .Cards{
-    width: 1200px;
+    max-width: 1200px;
+    width: 95%;
     margin: 20px auto 0px auto;/*상(20px 여백) 하(0px 여백)*/
 }
 .Mycomment{
