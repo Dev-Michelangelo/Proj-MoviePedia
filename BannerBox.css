@@ -1,0 +1,37 @@
+/*Google Font*/
+* {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+.Mytitle{
+    /*Background*/
+    background-color: green;
+    /*이미지 어둡게하기:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))*/
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;/*채우기 퍼센트*/
+    /*Text*/
+    color: white;
+    /*background contents 정렬*/
+    display: flex;
+    flex-direction: column;/*보통 column, row(열로 정렬) 만 변경*/
+    justify-content: center;
+    align-items: center;
+}
+/*Mytitle 내 button*/
+.Mytitle > button{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;/*투명색*/
+    
+    color: white;
+    border-radius: 50px;
+    border: 1px solid white; /*테두리 1px 흰선*/
+
+    margin-top: 10px;
+}
+/*Mytitle 의 button 이 hover(마우스를 올려 둔 상태) 상태일 때*/
+.Mytitle > button:hover{
+    border: 2px solid white; /*테두리 2px 흰선*/
+}
