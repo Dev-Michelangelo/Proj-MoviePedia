@@ -1,0 +1,7 @@
+.Cards{
+    width: 1200px;
+    margin: 20px auto 0px auto;/*상(20px 여백) 하(0px 여백)*/
+}
+.Mycomment{
+    color: grey;
+}
